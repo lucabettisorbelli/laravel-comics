@@ -15,5 +15,16 @@ return [
             "text" => "Documentation",
         ]
     ],
-    'someOtherData' => [ 42, 37, 73],
+    'voci' => [
+        'Characters',
+        'Comics',
+        'Moves',
+        'Tv',
+        'Games',
+        'Collectibles',
+        'Videos',
+        'Fans',
+        'News',
+        'Shop',
+    ],
 ];

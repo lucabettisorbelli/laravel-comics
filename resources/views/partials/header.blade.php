@@ -1,7 +1,19 @@
+
+
 <header class="p-3">
-    <img class="logo" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Laravel Logo">
-    <span>Some links: </span>
-    @foreach ($links as $link)
-        <a href="{{ $link['href'] }}">{{ $link['text'] }}</a>
-    @endforeach
+<div class="containerHeader d-flex justify-space-between p-1 align-items-center">
+    <div class="boxLogo">
+        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+    </div>
+    <div class="navBar d-flex">
+        @foreach ($voci as $voce)
+    <div class="navSection px-2 text-end">
+        <p>{{ $voce }}</p>
+    </div>
+@endforeach
+    </div>
+</div>
+    <div class="containerImg">
+            <img src="{{ Vite::asset('resources/img/jumbotron.png') }}" alt="">
+    </div>
 </header>
