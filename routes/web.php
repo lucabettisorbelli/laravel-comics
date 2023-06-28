@@ -14,16 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = config('store.someLinks');
-    return view('welcome', compact('links'));
-});
-
-Route::get('/otherpage', function () {
-    $links = config('store.someLinks');
-    return view('other', compact('links'));
-});
-
-Route::get('/', function () {
     $voci = config('store.voci');
-    return view('partials.header', compact('voci'));
+    $comics = config('comics');
+    $links = config('store.someLinks');
+    return view('welcome', compact('links', 'voci', 'comics'));
 });

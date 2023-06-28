@@ -1,5 +1,4 @@
 
-
 <header class="p-3">
 <div class="containerHeader d-flex justify-space-between p-1 align-items-center">
     <div class="boxLogo">
@@ -14,6 +13,6 @@
     </div>
 </div>
     <div class="containerImg">
-            <img src="{{ Vite::asset('resources/img/jumbotron.png') }}" alt="">
+            <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
     </div>
 </header>
