@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-@foreach ($comics as $comic) 
-<div>
-    {{$comic['title']}}
-    {{$comic['price']}}
+<div class="container d-flex flex-wrap">
+    @foreach ($comics as $comic) 
+    <div class="card d-flex flex-column justify-content-around">
+        {{$comic['title']}}
+        {{$comic['price']}}
+        <div class="cardImg">
+            <img src="{{$comic['thumb']}}" alt="">
+        </div>
+    </div>
+    @endforeach
 </div>
-@endforeach
 @endsection
